@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Умный дом</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#hero">SmartHouse</a>
+        </div>
+        <div class="cta">
+          <button onclick="scrollToSection('contact')">Заказать демо</button>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="burger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#hero">Главная</a></li>
+            <li><a href="#features">Функции</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#testimonials">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </nav>
+    </div>
+    </header>
+
+    <section id="hero" class="scroll-reveal">
+      <div class="hero-content">
+        <h1 class="scroll-reveal">Создайте свой умный дом вместе с нами</h1>
+        <p class="scroll-reveal">
+          Инновационные решения для вашего комфорта и безопасности
+        </p>
+        <button onclick="scrollToSection('features')" class="scroll-reveal">
+          Узнать больше
+        </button>
+      </div>
+    </section>
+
+    <section id="features" class="scroll-reveal">
+      <h2 class="scroll-reveal">Наши функции</h2>
+      <div class="feature-cards scroll-reveal">
+        <div class="feature-card scroll-reveal">
+          <img
+            src="https://images.unsplash.com/photo-1560844055-d36b1bdcfec2?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Умное освещение"
+            class="scroll-reveal"
+          />
+          <h3 class="scroll-reveal">Умное освещение</h3>
+          <p class="scroll-reveal">
+            Управляйте освещением в вашем доме с помощью голосовых команд или
+            мобильного приложения.
+          </p>
+        </div>
+        <div class="feature-card scroll-reveal">
+          <img
+            src="https://images.unsplash.com/photo-1723187939911-cb1a229e5adb?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Система безопасности"
+            class="scroll-reveal"
+          />
+          <h3 class="scroll-reveal">Система безопасности</h3>
+          <p class="scroll-reveal">
+            Защитите свой дом с помощью камер видеонаблюдения и датчиков
+            движения.
+          </p>
+        </div>
+        <div class="feature-card scroll-reveal">
+          <img
+            src="https://images.unsplash.com/photo-1545259742-b4fd8fea67e4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Умный термостат"
+            class="scroll-reveal"
+          />
+          <h3 class="scroll-reveal">Умный термостат</h3>
+          <p class="scroll-reveal">
+            Экономьте на отоплении и кондиционировании с помощью автоматической
+            регулировки температуры.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="scroll-reveal">
+      <h2 class="scroll-reveal">О нас</h2>
+      <p class="scroll-reveal">
+        "Мы команда профессионалов, стремящихся к инновациям и совершенству.<br> Наша
+        цель — сделать ваш дом умнее и удобнее"
+      </p>
+    </section>
+
+    <section id="testimonials" class="scroll-reveal">
+      <h2>Отзывы наших клиентов</h2>
+      <div class="testimonial-cards">
+          <div class="testimonial-card scroll-reveal">
+              <p>"Умный дом изменил мою жизнь! Теперь я могу управлять всем с помощью одного приложения."</p>
+              <h4>Иван Иванов</h4>
+          </div>
+          <div class="testimonial-card scroll-reveal">
+              <p>"Система безопасности работает отлично. Я чувствую себя в безопасности."</p>
+              <h4>Анна Петрова</h4>
+          </div>
+          <div class="testimonial-card scroll-reveal">
+              <p>"Умный термостат помог мне сэкономить на отоплении. Рекомендую!"</p>
+              <h4>Петр Сидоров</h4>
+          </div>
+      </div>
+    </section>
+
+    <section id="contact" class="scroll-reveal">
+      <h2>Контакты</h2>
+      <form id="contact-form">
+        <input
+          type="text"
+          name="name"
+          placeholder="Ваше имя"
+          class="scroll-reveal"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Ваш email"
+          class="scroll-reveal"
+          required
+        />
+        <textarea
+          placeholder="Ваше сообщение"
+          name="message"
+          class="scroll-reveal"
+          required
+        ></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+            <h3>Контакты</h3>
+            <p>Email: info@smart-home.com</p>
+            <p>Телефон: +7 (123) 456-7890</p>
+            <p>Адрес: 123456, г. Москва, ул. Примерная, д. 1</p>
+        </div>
+        <div class="footer-section">
+            <h3>Навигация</h3>
+            <ul>
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#features">Функции</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Социальные сети</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+      </div>
+      <p class="footer-copyright">&copy; 2023 Умный дом. Все права защищены.</p>
+    </footer>
+    <button type="button" onclick="topFunction()" id="myBtn" title="НАВЕРХ">&#9650</button>
+    <script src="scripts.js"></script>
+  </body>
+</html>
